@@ -15,7 +15,7 @@ const Navigation = () => {
                 Movies
             </NavLink>
         </nav>
-  )
-}
+    )
+};
 
-export default Navigation
+export default Navigation;
