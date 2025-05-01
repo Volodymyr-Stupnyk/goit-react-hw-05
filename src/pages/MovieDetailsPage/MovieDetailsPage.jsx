@@ -32,7 +32,7 @@ const MovieDetailsPage = () => {
                 {poster_path && (
                     <img
                         src={`https://image.tmdb.org/t/p/w300${poster_path}`}
-                        alt="{title}"
+                        alt={title}
                         width="300"
                     />
                 )}
@@ -42,13 +42,12 @@ const MovieDetailsPage = () => {
                     <h3>Overview</h3>
                     <p>{overview}</p>
                     <h3>Genres</h3>
-                    <ul>{genres.map(genre => {
-                        <li
-                            className={css.genre}
-                            key={genre.id}>
-                            {genre.name}
-                        </li>
-                    })}
+                    <ul>
+                        {genres.map(genre => (
+                            <li className={css.genre} key={genre.id}>
+                                {genre.name}
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>
