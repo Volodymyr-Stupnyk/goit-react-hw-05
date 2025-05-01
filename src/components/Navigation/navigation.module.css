@@ -1,3 +1,6 @@
-.link {
-    
-}
+.nav {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+  }
